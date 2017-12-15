@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'faker'
+
+User.delete_all
+Doc.delete_all
+
+User.create(email: "cpcamp2@gmail.com", password: "pennpenn")
+
+20.times do
+  Doc.create(title: Faker::SiliconValley.app, content: Faker::VForVendetta.speech, user_id: 1)
+end
