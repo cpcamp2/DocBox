@@ -1,1 +1,19 @@
-%h1 Welcome to DocBox!
+#banner
+  .banner_content
+    %h1 Doc Box
+    %p Organize your Docs!
+    %button= link_to "Enter", new_user_registration_path
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Organize
+        %p Just put stuff in here. Preezzzz
+        
+#bottom_cta
+  .wrapper
+    %h2 Go Ahead!
+    %br
+    %button= link_to "Join Now", new_user_registration_path
+  
